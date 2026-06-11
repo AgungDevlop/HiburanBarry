@@ -2,7 +2,6 @@ import { FaDownload } from 'react-icons/fa';
 
 export function Download() {
   const videoUrl = sessionStorage.getItem('videoUrl');
-  const videoTitle = sessionStorage.getItem('videoTitle');
 
   const randomUrls = [
     'https://otieu.com/4/10055984',
@@ -25,7 +24,7 @@ export function Download() {
     <div className="flex items-center justify-center h-screen bg-gray-900 text-white">
       <div className="container mx-auto p-4 text-center">
         <h1 className="text-2xl font-bold mb-6 text-blue-400">
-          Download Video {videoTitle ? `- ${videoTitle}` : ''}
+          Secure Video Download
         </h1>
         {videoUrl ? (
           <button
